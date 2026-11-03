@@ -45,3 +45,26 @@ adb install app/build/outputs/apk/debug/app-debug.apk
 ```
 
 Requires an Android SDK (`ANDROID_HOME`) and JDK 17 or later.
+
+The debug build has the application ID `io.github.thinca.xtoany.debug`, so it can be installed alongside the release build.
+Only one of them can be approved for the X links at a time.
+
+## Release
+
+Releases are built and signed by GitHub Actions (`.github/workflows/release.yml`).
+Bump `versionCode` and `versionName` in `app/build.gradle.kts`, then push a tag `v<versionName>`:
+
+```sh
+git tag v0.1.0
+git push origin v0.1.0
+```
+
+The workflow requires these repository secrets:
+
+| Secret | Value |
+| --- | --- |
+| `RELEASE_KEYSTORE_BASE64` | The PKCS12 keystore encoded with `base64 -w0` |
+| `RELEASE_KEYSTORE_PASSWORD` | The keystore password, also used as the key password |
+| `RELEASE_KEY_ALIAS` | The key alias |
+
+To build a signed release locally, set `RELEASE_KEYSTORE_PATH`, `RELEASE_KEYSTORE_PASSWORD`, and `RELEASE_KEY_ALIAS` and run `./gradlew assembleRelease`.
