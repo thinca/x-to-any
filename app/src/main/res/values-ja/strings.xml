@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="targets_heading">投稿に使うアプリ</string>
+    <string name="target_filter_hint">アプリを検索</string>
+    <string name="target_ask_every_time">毎回選ぶ (共有メニュー)</string>
+    <string name="link_settings_heading">リンクの処理</string>
+    <string name="link_settings_description">X の投稿リンクを受け取るには、X のリンクをアプリではなくブラウザで開くように設定してから、このアプリにすべてのリンクを追加してください。投稿以外の X のリンクは引き続き X アプリで開きます。</string>
+    <string name="open_x_link_settings">X のリンク設定を開く</string>
+    <string name="open_own_link_settings">このアプリのリンク設定を開く</string>
+    <string name="link_status_unknown">リンクの状態を取得できません。</string>
+    <string name="link_handling_disallowed">このアプリではリンクを開く設定がオフになっています。</string>
+    <string name="link_status_all_enabled">有効: X のリンクはこのアプリで開きます。</string>
+    <string name="link_status_some_disabled">無効: %1$s</string>
+</resources>

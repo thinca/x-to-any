@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">X to Any</string>
+    <string name="targets_heading">App to post with</string>
+    <string name="target_filter_hint">Search apps</string>
+    <string name="target_ask_every_time">Choose every time (share sheet)</string>
+    <string name="link_settings_heading">Link handling</string>
+    <string name="link_settings_description">To receive X post links, set X to open its links in the browser instead of the app, then add all links for this app. Other X links are still forwarded to the X app.</string>
+    <string name="open_x_link_settings">Open link settings for X</string>
+    <string name="open_own_link_settings">Open link settings for this app</string>
+    <string name="link_status_unknown">Link status is unavailable.</string>
+    <string name="link_handling_disallowed">Opening links is turned off for this app.</string>
+    <string name="link_status_all_enabled">Enabled: X links open in this app.</string>
+    <string name="link_status_some_disabled">Not enabled: %1$s</string>
+</resources>
